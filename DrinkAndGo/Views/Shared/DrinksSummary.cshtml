@@ -1,0 +1,16 @@
+﻿@model Drink
+
+<div class="card">
+    <img width="300" src="~/Images/carousel1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h3 class="pull-right"> @Model.Price.ToString()</h3>
+        <h3>
+            <a href="#">@Model.Name</a>
+        </h3>
+        <p>@Model.ShortDescription</p>
+    </div>
+    <div class="card-footer">
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+

@@ -1,0 +1,21 @@
+﻿
+
+@using DrinkAndGo.ViewModels
+
+@model DrinkListViewModel
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<div>
+    <h1>List of all drinks </h1>
+</div>
+
+<h3>@Model.CurrentCategory</h3>
+<div class="card-group">
+    @foreach (var item in Model.Drinks)
+     {
+            @Html.Partial("DrinksSummary", item)
+     }
+</div>
